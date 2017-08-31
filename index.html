@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indogarden</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Hamburger -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Logo -->
+        <img class="navbar-brand" src="../www/img/logo.png" alt="Indogarden logo"/>
+      </div>
+        <!-- Menu -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#page-one">O NAS</a></li>
+          <li><a href="#page-two">BESTSELERY</a></li>
+          <li><a href="#page-three">OFERTA</a></li>
+          <li><a href="#page-four">JAK TO ROBIMY</a></li>
+          <li><a href="#page-five">KONTAKT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="slider">
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Items -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./img/banner.png" alt="Fotel Modern"/>
+            </div>
+
+            <div class="item green-slide"></div>
+
+            <div class="item">
+              <img src="./img/banner.png" alt="Fotel Modern"/>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  </div>
+
+<!-- Block one -->
+
+  <div class="container ">
+    <div id="page-one" class="row">
+      <div class="col-lg-6">
+        <h4>O NAS</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua</p>
+        <span style="cursor:pointer">CZYTAJ DALEJ</span>
+      </div>
+      <div class="col-lg-6">
+         <img class="img-block-first" src="./img/house.png"/>
+      </div>
+    </div>
+  </div>
+
+<!-- Block two -->
+
+  <div class="container">
+    <div id="page-two" class="row">
+      <div class="col-lg-6">
+        <img class="img-block" src="./img/chair.png"/>
+      </div>
+      <div class="col-lg-6 ">
+        <h4>BESTSELLERY</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua</p>
+        <span style="cursor:pointer">SKONTAKTUJ SIĘ</span>
+        <span style="cursor:pointer">DOWIEDZ SIĘ WIĘCEJ</span>
+      </div>
+    </div>
+  </div>
+
+<!-- Block three -->
+
+  <div class="container ">
+    <div id="page-three" class="row">
+      <div class="col-lg-6 offer">
+        <h4>OFERTA</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua</p>
+        <span style="cursor:pointer">SKONTAKTUJ SIĘ</span>
+        <span style="cursor:pointer">DOWIEDZ SIĘ WIĘCEJ</span>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-block" src="./img/balcony.png"/>
+      </div>
+    </div>
+  </div>
+
+<!-- Block four -->
+
+  <div class="container ">
+    <div id="page-four"  class="row">
+      <div  class="col-lg-12 product">
+        <h4>SPODOBAŁY SIĘ NASZE PRODUKTY?</h4>
+        <span style="cursor:pointer">ZOBACZ WIĘCEJ</span>
+        <h4>SKONTAKTUJ SIĘ Z NAMI</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br />sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua</p>
+      </div>
+    </div>
+
+<!-- Contact form -->
+
+    <div  class="container ">
+      <div id="page-five" class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label for="name" class="h4">Imię</label>
+                <input type="text" class="form-control" id="name" placeholder="Wpisz swoje imię" required>
+            <div class="form-group">
+                <label for="email" class="h4">Adres e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Wpisz swój e-mail" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4">Twoja wiadomość</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-primary btn-lg pull-right ">Wyślij</button>
+<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+          </div>
+          <div class="col-lg-1"></div>
+        <div class="col-lg-6 form-map">
+          <h5>ZNAJDZIESZ NAS TUTAJ</h5>
+          <img class="map" src="./img/map.png"/>
+          <h5>Skontaktuj się z nami</h5>
+          <div class="form-contact">
+            <span><img src="./img/pin.png"/> Lorem ipsum </span>
+            <span><img src="./img/mail.png"/> Lorem ipsum@mail.com </span>
+            <span><img src="./img/phone.png"/> +48 000 000 000 </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <footer>
+      <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4 logo">
+          <img class="logo-footer" src="./img/logo-footer.png" /></div>
+          <div class="col-lg-4"></div>
+        </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <ul class="navbar-footer">
+              <li><a href="#page-one">O NAS</a></li>
+              <li><a href="#page-two">BESTSELERY</a></li>
+              <li><a href="#page-three">OFERTA</a></li>
+              <li><a href="#page-four">JAK TO ROBIMY</a></li>
+              <li><a href="#page-five">KONTAKT</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      <div class="row">
+        <div class="col-lg-4 copy">
+          <p>Copyright &copy; 2017- Indogarden</p>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4"></div>
+      </div>
+  </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
